@@ -1,0 +1,15 @@
+Foundry Local Overview
+
+Foundry Local is Microsoft's on-device AI runtime. It lets applications run large language
+models directly on a user's laptop or desktop, with no internet connection and no cloud
+account required. Foundry Local automatically detects the available hardware (CPU, GPU,
+or NPU) and downloads the best-performing version of a chosen model for that hardware.
+
+Foundry Local exposes an OpenAI-compatible REST API on localhost once the web service is
+started, so existing OpenAI SDK code can talk to it with only a change of base_url.
+
+Common uses for Foundry Local include offline chat assistants, on-device document search,
+and privacy-sensitive applications where data must never leave the machine.
+
+To get started, install the Foundry Local runtime for your operating system, then use the
+Python SDK (foundry-local-sdk) to download, load, and query models from Python code.

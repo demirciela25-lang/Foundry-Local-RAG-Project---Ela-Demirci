@@ -1,0 +1,3 @@
+Retrieval-Augmented Generation (RAG) has three steps: Retrieve, Augment, and Generate.
+It retrieves relevant document chunks, adds them to a model prompt, and generates a
+grounded answer using that context.

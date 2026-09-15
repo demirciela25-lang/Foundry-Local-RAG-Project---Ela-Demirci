@@ -1,0 +1,14 @@
+SQLite for Local Storage
+
+SQLite is a small, serverless SQL database engine that stores an entire database in a
+single file on disk. It requires no separate database server process and is built into
+Python via the standard sqlite3 module, which makes it a convenient choice for storing
+documents and their embedding vectors on a student laptop.
+
+In this project, SQLite stores each document chunk's text alongside its embedding vector
+(saved as a JSON string) in a table called chunks. At query time, the application reads
+the rows back into memory, computes cosine similarity between the query embedding and each
+stored embedding, and returns the top-scoring chunks.
+
+For a small knowledge base of a few dozen documents, computing similarity in Python after
+a simple SELECT * is fast enough and avoids the need for a dedicated vector database.

@@ -1,0 +1,2 @@
+SQLite is a small, serverless database stored in one file. This project stores each text
+chunk and its embedding vector in SQLite, then compares vectors to retrieve related text.

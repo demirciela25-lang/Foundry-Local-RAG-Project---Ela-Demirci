@@ -1,0 +1,2 @@
+# macOS/Linux. On Windows use foundry-local-sdk-winml instead.
+foundry-local-sdk

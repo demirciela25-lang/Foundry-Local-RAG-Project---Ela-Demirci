@@ -1,0 +1,19 @@
+What is RAG?
+
+Retrieval-Augmented Generation (RAG) is a pattern for improving the answers of a language
+model by giving it access to an external knowledge base at answer time. RAG has three
+steps: Retrieve, Augment, and Generate.
+
+Retrieve: convert the user's question into an embedding vector, then compare it against
+the embedding vectors of stored document chunks to find the most relevant chunks.
+
+Augment: insert the retrieved chunks into the prompt that is sent to the language model,
+usually as part of a system message that instructs the model to answer using only that
+context.
+
+Generate: the language model produces an answer that is grounded in the retrieved text,
+which reduces hallucination and allows the assistant to say "I don't know" when the
+knowledge base does not contain the answer.
+
+RAG is popular for building Q&A assistants over private documents, because it avoids the
+cost and complexity of fine-tuning a model on that data.

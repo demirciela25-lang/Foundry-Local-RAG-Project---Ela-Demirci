@@ -1,0 +1,2 @@
+Foundry Local runs models on a computer rather than a cloud service. It can use CPU, GPU,
+or NPU hardware, and it supports private offline applications once models are downloaded.
